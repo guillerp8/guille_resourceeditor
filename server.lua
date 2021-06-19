@@ -50,7 +50,7 @@ RegisterCommand("editresource", function(source, args)
 
         local blacklisted = false
 
-        if loadedResource ~= nil and resource ~= GetCurrentResourceName() then
+        if loadedResource ~= nil then
             for k,v in pairs(Config.blacklistedResources) do
                 if args[1] == v then
                     blacklisted = true
